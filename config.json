@@ -1,0 +1,28 @@
+{
+    "models": [
+      {
+        "title": "deepseek chat",
+        "provider": "ollama",
+        "model": "deepseek-coder-v2",
+        "apiKey": "<you api key>",
+        "apiBase": "<your endpoint to Ollama>"
+      }
+    ],
+    "customCommands": [
+      {
+        "name": "test",
+        "prompt": "{{{ input }}}\n\nWrite a comprehensive set of unit tests for the selected code. It should setup, run tests that check for correctness including important edge cases, and teardown. Ensure that the tests are complete and sophisticated. Give the tests just as chat output, don't edit any file.",
+        "description": "Write unit tests for highlighted code"
+      }
+    ],
+    "tabAutocompleteModel": {
+        "title": "OpenAI-compatible server / API",
+        "provider": "ollama",
+        "model": "starcoder2",
+        "apiKey": "<your api key>",
+        "apiBase": "<your endpoint to Ollama>"
+    },
+    "embeddingsProvider": {
+      "provider": "transformers.js"
+    }
+  }

@@ -1,0 +1,5 @@
+{
+    "continue.enableTabAutocomplete": true,
+    "continue.remoteConfigServerUrl": "<your endpoint to Ollama>",
+    "continue.userToken": "<your api key>"
+}
